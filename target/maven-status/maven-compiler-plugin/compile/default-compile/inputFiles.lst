@@ -1,0 +1,14 @@
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\config\OpenApiConfig.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\config\SecurityConfig.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\controller\MovimientoFinancieroController.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\dto\MovimientoRequestDTO.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\entity\MovimientoFinancieroEntity.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\entity\TipoMovimiento.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\exception\GlobalExceptionHandler.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\exception\MovimientoFinancieroException.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\FinatiolFinanzasMsApplication.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\repository\MovimientoFinancieroRepository.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\security\JwtAuthFilter.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\security\JwtService.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\service\MovimientoFinancieroService.java
+C:\Users\Alan Rivero\Documents\workspace-spring-tools-for-eclipse-5.1.1.RELEASE\finatiol-finanzas-ms\src\main\java\com\finatiol\finanzas\service\MovimientoFinancieroServiceImpl.java
