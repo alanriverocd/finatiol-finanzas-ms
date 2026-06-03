@@ -71,4 +71,9 @@ public class MovimientoFinancieroController {
                 200,
                 service.balance()));
     }
+
+    @GetMapping("/resumen")
+    public ResponseEntity<BigDecimal> resumenBalance() {
+        return ResponseEntity.ok(service.balance());
+    }
 }

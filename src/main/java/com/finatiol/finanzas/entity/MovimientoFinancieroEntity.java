@@ -1,12 +1,18 @@
 package com.finatiol.finanzas.entity;
 
+import com.finatiol.common.tenant.TenantContext;
 import jakarta.persistence.*;
+import org.hibernate.annotations.Filter;
+import org.hibernate.annotations.FilterDef;
+import org.hibernate.annotations.ParamDef;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "movimientos_financieros")
+@FilterDef(name = "tenantFilter", parameters = @ParamDef(name = "tenantId", type = String.class))
+@Filter(name = "tenantFilter", condition = "tenant_id = :tenantId")
 public class MovimientoFinancieroEntity {
 
     @Id
@@ -28,12 +34,18 @@ public class MovimientoFinancieroEntity {
 
     private String referencia;
 
+    @Column(name = "tenant_id")
+    private String tenantId;
+
     @PrePersist
     protected void onCreate() {
         if (this.fecha == null) {
             this.fecha = LocalDateTime.now();
         }
-    }
+        if (this.tenantId == null) {
+            this.tenantId = TenantContext.getCurrentTenant();
+        }
+}
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -52,4 +64,7 @@ public class MovimientoFinancieroEntity {
 
     public String getReferencia() { return referencia; }
     public void setReferencia(String referencia) { this.referencia = referencia; }
+
+    public String getTenantId() { return tenantId; }
+    public void setTenantId(String tenantId) { this.tenantId = tenantId; }
 }
