@@ -4,6 +4,7 @@ import com.finatiol.common.constants.finanzas.SuccessCodes;
 import com.finatiol.common.constants.finanzas.SuccessMessages;
 import com.finatiol.common.response.SuccessResponse;
 import com.finatiol.finanzas.dto.MovimientoRequestDTO;
+import com.finatiol.finanzas.dto.ResumenMensualDTO;
 import com.finatiol.finanzas.entity.MovimientoFinancieroEntity;
 import com.finatiol.finanzas.service.MovimientoFinancieroService;
 import jakarta.validation.Valid;
@@ -75,5 +76,23 @@ public class MovimientoFinancieroController {
     @GetMapping("/resumen")
     public ResponseEntity<BigDecimal> resumenBalance() {
         return ResponseEntity.ok(service.balance());
+    }
+
+    @GetMapping("/historial")
+    public ResponseEntity<SuccessResponse<List<ResumenMensualDTO>>> historialMensual() {
+        return ResponseEntity.ok(new SuccessResponse<>(
+                "FIN-HIST-001",
+                "Historial mensual obtenido",
+                200,
+                service.historialMensual()));
+    }
+
+    @PostMapping("/cerrar-mes")
+    public ResponseEntity<SuccessResponse<ResumenMensualDTO>> cerrarMes() {
+        return ResponseEntity.ok(new SuccessResponse<>(
+                "FIN-CIERRE-001",
+                "Mes cerrado y archivado correctamente",
+                200,
+                service.cerrarMes()));
     }
 }
